@@ -1,4 +1,4 @@
-const user = require("./../modules/user") //llamamos a la clase User
+const user = require("./../services/userService") //llamamos a la clase User
 
 class userView{ //creacion de una nueva clase
     
