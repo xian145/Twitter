@@ -11,10 +11,10 @@ describe('Unit test for User Class', () => {
         expect(user1.lastUpdate).not.toBeUndefined() //para segurarno que no este indefinido
     })
     test('2. add getters', () => {
-        const user = new user(1, "xian145", "Abraham Ariel", "Bio")
-        expect(user.getUserName()).toBe("xian145")
-        expect(user.getBio()).toBe("Bio")
-        expect(user.getDateCreated()).not.toBeUndefined()
-        expect(user.getLastUpdate()).not.toBeUndefined()
+        const user2 = new user(1, "xian145", "Abraham Ariel", "Bio")
+        expect(user2.getUserName).toBe("xian145")
+        expect(user2.getBio).toBe("Bio")
+        expect(user2.getDateCreated).not.toBeUndefined()
+        expect(user2.getLastUpdate).not.toBeUndefined()
     })
 })
