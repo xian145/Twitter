@@ -1,7 +1,7 @@
 const user = require('./../../app/modules/user') //llamamos aplicacion, que en este caso es una clase
 
 describe('Unit test for User Class', () => {
-    test('Create an user object', () => {
+    test('1. Create an user object', () => {
         const user1 = new user(1, "xian145", "Abraham Ariel", "Bio") //creamos el objeto con las cosas necesarias
         expect(user1.id).toBe(1)
         expect(user1.userName).toBe("xian145")
@@ -9,5 +9,12 @@ describe('Unit test for User Class', () => {
         expect(user1.bio).toBe("Bio")
         expect(user1.dateCreated).not.toBeUndefined() //para segurarno que no este indefinido
         expect(user1.lastUpdate).not.toBeUndefined() //para segurarno que no este indefinido
+    })
+    test('2. add getters', () => {
+        const user = new user(1, "xian145", "Abraham Ariel", "Bio")
+        expect(user.getUserName()).toBe("xian145")
+        expect(user.getBio()).toBe("Bio")
+        expect(user.getDateCreated()).not.toBeUndefined()
+        expect(user.getLastUpdate()).not.toBeUndefined()
     })
 })
