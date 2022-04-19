@@ -11,6 +11,11 @@ class userService{ //creacion de una nueva clase
         list.push(user.id, user.userName, user.name, "sin bio") //introducimos a la lista las cosas que nos interesan
         return list //regresamos la lista a donde nos la pidieron
     }
+ 
+    static updateUserName(user, newUserName) {
+        user.userName = newUserName
+        return user
+    }
 
 }
 
