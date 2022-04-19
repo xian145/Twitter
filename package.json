@@ -1,0 +1,22 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "Repo con el ejercicio 3 de la semana 3 de la mision backEnd con node.js de launchx",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xian145/Twitter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xian145/Twitter/issues"
+  },
+  "homepage": "https://github.com/xian145/Twitter#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
