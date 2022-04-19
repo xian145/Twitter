@@ -17,6 +17,11 @@ class userService{ //creacion de una nueva clase
         return user
     }
 
+    static getAllUserNames(listOfUsers) {
+        const list = listOfUsers.map((userName) => userName.userName) //se utiliza map para quedarnos solo con lo que nos interesa, en este caso los usernames de la lista que entra orginalmente
+        return list //devuelve la nueva lista con la informacion requerida que es la lista de nombres de usuarios
+    }
+
 }
 
 module.exports = userService
