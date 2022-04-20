@@ -2,7 +2,6 @@ const userService = require("./../services/userService") //llamamos a la clase U
 
 class userView{
     static createUser (payload){
-        const keys =[`username`,'id','name']
         if (payload === null){
            return {error: "payload not found"}
         }
@@ -14,6 +13,9 @@ class userView{
             else
             return {error: "need to have a valid value"}
         }
+
+        const user = userService.create(payload.id, payload.userName, payload.name)
+        return user
     } 
 }
 
