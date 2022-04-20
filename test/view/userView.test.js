@@ -7,4 +7,10 @@ describe("Test for userView", () => {
 
         expect(result.error).toMatch(/payload no existe/) //compara que lo que le llegue sea lo mismo que lo que esta entre slash
     })
+
+    test('2. Return an error object when try to create a new user with a payload with invalid properties', () => {
+        const payload = {userName: null, name: 12, id: "id"}
+        const result = userView.createUser(payload)
+        expect(result.error).toMatch(/need to have a valid value/)
+    })
 })

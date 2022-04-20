@@ -3,7 +3,7 @@ const userService = require("./../services/userService") //llamamos a la clase U
 class userView{
     static createUser (payload){
         if (payload === null){
-           return {error:"payload not found"}
+           return {error: "payload not found"}
         }
     } 
 }
