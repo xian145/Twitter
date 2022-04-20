@@ -5,8 +5,9 @@ class user {
         this.name = name,
         this.bio = bio,
         this.dateCreated = new Date(),
-        this.lastUpdate = new Date(),
-        this.error = (this.id === null | this.userName === undefined | this.name === undefined)  ? "payload no existe" : "" //si se cumple con cualquiera de estas cosas se despliega el mensaje de que el payload no existe de lo contrario es un string vacio
+        this.lastUpdate = new Date()
+        //this.error = (this.id === null | this.userName === undefined | this.name === undefined)  ? "payload no existe" : ""
+        //esta fue una manera de resolver uno de los ejercicios pero hay otra manera que servira para poder resolver los siguientes ejercicios
     }
 
     get getUserName() {
