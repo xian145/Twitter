@@ -5,6 +5,10 @@ class userView{
         if (payload === null){
            return {error: "payload not found"}
         }
+
+        else if (!(typeof payload.userName === 'string') || !(typeof payload.name === 'string') || !(typeof payload.id === 'number')) {
+            return {error: "need to have a valid value"}
+        }
     } 
 }
 
